@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    background-color: yel/low;
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.nav_cs{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_cs>h3{
+    font-size: 14px;
+}
+.button_cs{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    transition: all 0.2s;
+}
+.button_cs:hover{
+    background-color: white;
+    color: black;
+}
+.luckynumber_cs{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.number_cs{
+
+    width: 7rem;
+    height: 5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+    background-color: black;
+}
+.line_cs{
+    width: 100%;
+    border-top: 3px solid black;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    /* transform: translate(50%,50%); */
+}
+.guessDiv_cs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.guess_cs{
+    width: 50%;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+.guessSec_cs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.guessSec_cs > label{
+    font-size: 14px;
+}
+
+.scoreleft_cs > p{
+    font-size: 14px;
+}
+.hint{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+}
+@media screen and (max-width:768px){
+    .button_cs{
+        padding: 5px;
+    }
+    .nav_cs>h3{
+        font-size: 7px;
+        margin-right: 5px;
+    }
+    .hint{
+        font-size: 10px;
+    }
+    .guessSec_cs > label{
+        font-size: 10px;
+    }
+    .scoreleft_cs > p{
+        font-size: 8px;
+    }
+}

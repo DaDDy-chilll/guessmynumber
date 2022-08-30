@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/style.css" type="text/css">
+</head>
+<body>
+<div class="container-fluid my-4 nav_cs">
+    <button type="reset" class="button_cs">Again!</button>
+    <h3>Number between 1 and 20</h3>
+</div>
+<div class="container-fluid my-4 luckynumber_cs">
+    <span class="line_cs"></span>
+    <h1 class="number_cs">?</h1>
+</div>
+<div class="container my-5 guessDiv_cs">
+    <form action="#" method="post">
+        <div class="guessSec_cs">
+            <label for="guess">Guess Number...</label>
+            <input type="number" name="guess" id="guess" min="0" max="20" class="my-3 guess_cs">
+            <button type="submit" class="button_cs">Guess</button>
+        </div>
+    </form>
+    <div class="scoreleft_cs">
+        <p>Remaining guess - <span class="score_cs">20</span></p>
+        <p>Highest score - <span>0</span></p>
+    </div>
+</div>
+<div class="hint">
+    <p>Start guessing....</p>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" type="text/javasript"></script>
+</body>
+</html>
