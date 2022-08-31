@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body{
-    background-color: yel/low;
+    background-color: white;
     position: relative;
     font-family: 'Press Start 2P', cursive;
 }
@@ -14,13 +14,19 @@ body{
 .nav_cs>h3{
     font-size: 14px;
 }
-.button_cs{
+.button_cs1,.button_cs2{
     color: white;
     background-color: black;
     padding: 10px;
     transition: all 0.2s;
+
 }
-.button_cs:hover{
+.button_cs2{
+    position: absolute;
+    left: 6%;
+    top: 100%;
+}
+.button_cs1:hover,.button_cs2:hover{
     background-color: white;
     color: black;
 }
@@ -59,6 +65,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .guess_cs{
     width: 50%;
